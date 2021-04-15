@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="age_range_slider_values">
+        <item>20</item>
+        <item>50</item>
+    </array>
+    <array name="height_range_slider_values">
+        <item>140</item>
+        <item>200</item>
+    </array>
+    <array name="dist_range_slider_values">
+        <item>0</item>
+        <item>500</item>
+    </array>
+</resources>

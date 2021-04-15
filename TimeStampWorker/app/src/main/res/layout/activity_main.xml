@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/timeInTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/timeOutTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeInTxtView"
+        android:layout_margin="10dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/trialTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeOutTxtView"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/totalWorkHrTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trialTxtView"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/toDoListTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalWorkHrTxtView"
+        android:layout_margin="10dp"
+        android:text="To Do List :"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/taskEditTxt"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toDoListTxtView"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toDoListTxtView"
+        android:layout_toRightOf="@+id/taskEditTxt"
+        android:layout_margin="10dp"
+        android:text="+"
+        android:textSize="25dp" />
+
+    <ListView
+        android:id="@+id/taskList"
+        android:layout_width="410dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addBtn"
+        android:layout_margin="10dp"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:clickable="true"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskList"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="150dp"
+        android:visibility="invisible"
+        android:text="START"
+        android:textSize="25dp"/>
+</RelativeLayout>

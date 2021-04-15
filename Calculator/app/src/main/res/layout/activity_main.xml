@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableRow>
+        <TextView
+            android:id="@+id/calculation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_span="4"
+            android:cursorVisible="false" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="C" />
+        <Button
+            android:id="@+id/backspace"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="←" />
+        <Button
+            android:id="@+id/percentage"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="%" />
+        <Button
+            android:id="@+id/division"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="/" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="7" />
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="8" />
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="9" />
+        <Button
+            android:id="@+id/multiplication"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="*" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/four"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="4" />
+        <Button
+            android:id="@+id/five"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="5" />
+        <Button
+            android:id="@+id/six"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="6" />
+        <Button
+            android:id="@+id/subtraction"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="-" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/one"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="1" />
+        <Button
+            android:id="@+id/two"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="2" />
+        <Button
+            android:id="@+id/three"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="3" />
+        <Button
+            android:id="@+id/addition"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="+" />
+    </TableRow>
+    <LinearLayout>
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="0" />
+        <Button
+            android:id="@+id/intConverter"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="+/-" />
+        <Button
+            android:id="@+id/decimal"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="." />
+        <Button
+            android:id="@+id/execute"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="=" />
+    </LinearLayout>
+</TableLayout>

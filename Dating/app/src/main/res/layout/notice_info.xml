@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="NOTICE"
+        android:textColor="@color/black"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/titleTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Title : "
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/dateTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Date : "
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/writerTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Writer : "
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+    <TextView
+        android:id="@+id/contentsTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Contents : "
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:textSize="20dp"
+        android:text="BACK"/>
+</LinearLayout>

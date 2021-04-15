@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@id/prefTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="PREFERENCE SETTING"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/agePrefTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prefTxtView"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Age :"/>
+        <RadioGroup
+            android:id="@+id/radioPrefAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/prefTxtView"
+            android:layout_toRightOf="@+id/agePrefTxtView">
+            <RadioButton
+                android:id="@+id/radioPref20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="20" />
+            <RadioButton
+                android:id="@+id/radioPref30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="30" />
+            <RadioButton
+                android:id="@+id/radioPref40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="40" />
+            <RadioButton
+                android:id="@+id/radioPref50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="50" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/earlyPrefBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/radioPrefAge"
+            android:text="EARLY"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/midPrefBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/earlyPrefBtn"
+            android:layout_below="@+id/radioPrefAge"
+            android:text="MID"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/lastPrefBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/midPrefBtn"
+            android:layout_below="@+id/radioPrefAge"
+            android:text="LATE"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/distanceTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/earlyPrefBtn"
+            android:layout_margin="10dp"
+            android:text="Distance (km)"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/distRangeSlider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/distanceTxtView"
+            android:valueFrom="0"
+            android:valueTo="500"
+            android:stepSize="10"
+            app:values="@array/dist_range_slider_values" />
+
+        <TextView
+            android:id="@+id/drinkTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/distRangeSlider"
+            android:text="Drink :"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <RadioGroup
+            android:id="@+id/radioDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/distRangeSlider"
+            android:layout_toRightOf="@id/drinkTxtView">
+            <RadioButton
+                android:id="@+id/radioDrinkYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Yes" />
+            <RadioButton
+                android:id="@+id/radioDrinkNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/smokeTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/distRangeSlider"
+            android:layout_toRightOf="@id/radioDrink"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="30dp"
+            android:text="Smoke :"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <RadioGroup
+            android:id="@+id/radioSmoke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/distRangeSlider"
+            android:layout_toRightOf="@id/smokeTxtView">
+            <RadioButton
+                android:id="@+id/radioSmokeYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Yes" />
+            <RadioButton
+                android:id="@+id/radioSmokeNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/religionTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioDrink"
+            android:layout_margin="10dp"
+            android:text="Religion"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <RadioGroup
+            android:id="@+id/radioReligion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioDrink"
+            android:layout_toRightOf="@id/religionTxtView">
+            <RadioButton
+                android:id="@+id/radioNoReligion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="No religion" />
+            <RadioButton
+                android:id="@+id/radioChristian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Christian" />
+            <RadioButton
+                android:id="@+id/radioBuddhist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Buddhist" />
+            <RadioButton
+                android:id="@+id/radioCatholic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Catholic" />
+            <RadioButton
+                android:id="@+id/radioMuslim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Muslim" />
+            <RadioButton
+                android:id="@+id/radioHindu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Hindu" />
+            <RadioButton
+                android:id="@+id/radioJewish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Jewish" />
+            <RadioButton
+                android:id="@+id/radioOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Other" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/hobbyTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioReligion"
+            android:layout_margin="10dp"
+            android:text="Hobby"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioHobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioReligion"
+            android:layout_toRightOf="@id/hobbyTxtView">
+            <RadioButton
+                android:id="@+id/radioPhotography"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:text="Photography" />
+            <RadioButton
+                android:id="@+id/radioCooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:text="Cooking" />
+            <RadioButton
+                android:id="@+id/radioDrawing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:text="Drawing" />
+            <RadioButton
+                android:id="@+id/radioHiking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:text="Hiking" />
+            <RadioButton
+                android:id="@+id/radioDancing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:text="Dancing" />
+            <RadioButton
+                android:id="@+id/radioSinging"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:text="Singing" />
+            <RadioButton
+                android:id="@+id/radioVideoGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:text="Video Game" />
+            <RadioButton
+                android:id="@+id/radioOtherHobby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:text="Other" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/priorityTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioHobby"
+            android:layout_margin="10dp"
+            android:text="Priority"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioHobby"
+            android:layout_toRightOf="@id/priorityTxtView">
+            <RadioButton
+                android:id="@+id/radioAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:text="Age" />
+            <RadioButton
+                android:id="@+id/radioDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:text="Distance" />
+            <RadioButton
+                android:id="@+id/radioDrinkPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:text="Drink" />
+            <RadioButton
+                android:id="@+id/radioSmokePriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:text="Smoke" />
+            <RadioButton
+                android:id="@+id/radioReligionPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:text="Religion" />
+            <RadioButton
+                android:id="@+id/radioHobbyPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:text="Hobby" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_below="@id/radioPriority"
+            android:text="SUBMIT"
+            android:textSize="20dp"
+            android:id="@+id/submitBtn" />
+    </RelativeLayout>
+</ScrollView>

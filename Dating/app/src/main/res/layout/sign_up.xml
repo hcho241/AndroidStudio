@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@id/signUpTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="SIGN UP"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/idTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/signUpTxtView"
+            android:text="ID :"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/idTxtView"
+            android:layout_below="@id/signUpTxtView"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:hint="(MAX 10 CHARS)"
+            android:id="@+id/idEditTxt"  />
+
+        <TextView
+            android:id="@+id/pwTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/idTxtView"
+            android:text="PW :"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/pwEditTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pwTxtView"
+            android:layout_below="@id/idTxtView"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:hint="(MAX 10 CHARS)" />
+
+        <TextView
+            android:id="@+id/sexTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/pwTxtView"
+            android:text="Sex :"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/pwTxtView"
+            android:layout_toRightOf="@+id/sexTxtView">
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Male" />
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/ageTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioSex"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Age :"/>
+        <RadioGroup
+            android:id="@+id/radioAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/radioSex"
+            android:layout_toRightOf="@+id/ageTxtView">
+            <RadioButton
+                android:id="@+id/radio20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="20" />
+            <RadioButton
+                android:id="@+id/radio30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="30" />
+            <RadioButton
+                android:id="@+id/radio40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="40" />
+            <RadioButton
+                android:id="@+id/radio50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="50" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/earlyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/radioAge"
+            android:text="EARLY"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/midBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/earlyBtn"
+            android:layout_below="@+id/radioAge"
+            android:text="MID"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/lastBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/midBtn"
+            android:layout_below="@+id/radioAge"
+            android:text="LATE"
+            android:textSize="20dp" />
+
+        <!-- Pref info -->
+        <TextView
+            android:id="@+id/prefTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lastBtn"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Preference :"/>
+        <TextView
+            android:id="@+id/sexPrefTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/prefTxtView"
+            android:text="Sex :"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/agePrefTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sexPrefTxtView"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Age :"/>
+        <RadioGroup
+            android:id="@+id/radioPrefAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/sexPrefTxtView"
+            android:layout_toRightOf="@+id/agePrefTxtView">
+            <RadioButton
+                android:id="@+id/radioPref20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="20" />
+            <RadioButton
+                android:id="@+id/radioPref30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="30" />
+            <RadioButton
+                android:id="@+id/radioPref40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="40" />
+            <RadioButton
+                android:id="@+id/radioPref50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="50" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/earlyPrefBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/radioPrefAge"
+            android:text="EARLY"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/midPrefBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/earlyPrefBtn"
+            android:layout_below="@+id/radioPrefAge"
+            android:text="MID"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/lastPrefBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/midPrefBtn"
+            android:layout_below="@+id/radioPrefAge"
+            android:text="LATE"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/distanceTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/earlyPrefBtn"
+            android:layout_margin="10dp"
+            android:text="Distance (km)"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/distRangeSlider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/distanceTxtView"
+            android:valueFrom="0"
+            android:valueTo="500"
+            android:stepSize="10"
+            app:values="@array/dist_range_slider_values" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_below="@id/distRangeSlider"
+            android:text="NEXT"
+            android:textSize="20dp"
+            android:id="@+id/nextBtn" />
+    </RelativeLayout>
+</ScrollView>

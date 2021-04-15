@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Hobby"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <RadioGroup
+        android:id="@+id/radioHobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioPhotography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:text="Photography" />
+        <RadioButton
+            android:id="@+id/radioCooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:text="Cooking" />
+        <RadioButton
+            android:id="@+id/radioDrawing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:text="Drawing" />
+        <RadioButton
+            android:id="@+id/radioHiking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:text="Hiking" />
+        <RadioButton
+            android:id="@+id/radioDancing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:text="Dancing" />
+        <RadioButton
+            android:id="@+id/radioSinging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:text="Singing" />
+        <RadioButton
+            android:id="@+id/radioVideoGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:text="Video Game" />
+        <RadioButton
+            android:id="@+id/radioOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:text="Other" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="NEXT"
+        android:textSize="25dp"
+        android:id="@+id/nextBtn" />
+</LinearLayout>
